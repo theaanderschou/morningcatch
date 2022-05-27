@@ -78,6 +78,7 @@ h3 {
     font-weight: 900;
     font-style: normal;
     font-size: clamp(1rem, 1.0vw, 1.7rem);
+    font-size: 40px;
 }
 
 h4 {
@@ -93,21 +94,29 @@ p {
     line-height: 1.3rem;
 }
 
-input {
+img {
+    display: block;
 }
+
+input {}
 
 button {
     font-weight: bold;
-    border: 2px solid var(--midnight);
-    padding: 3px 5px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
     transition: .2s;
     cursor: pointer;
-    background: transparent;
+    background: #3C5B74;
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 1;
+    font-size: 14px;
 }
 
 button:hover {
-    background: var(--midnight);
-    color: var(--marble);
+    background: var(--dark);
 }
 
 ::selection {
@@ -120,7 +129,7 @@ button:hover {
 }
 
 #gradient-overlay {
-    background: radial-gradient(rgba(10,255,193,.19), #112722);
+    background: radial-gradient(rgba(10, 255, 193, .19), #112722);
     opacity: 35%;
     mix-blend-mode: overlay;
     height: 100vh;
@@ -134,10 +143,10 @@ button:hover {
 
 /* NAV styling */
 nav {
-    width: 288px;
+    width: 15vw;
     background: var(--light-gradient);
     height: 100vh;
-    padding: 40px;
+    padding: 2vw;
     position: fixed;
 }
 
@@ -149,19 +158,163 @@ nav img {
 
 
 section {
-    padding: 40px;
+    padding: 2.66vw;
 }
 
 #main-dashboard {
-    width: calc(100vw - 288px);
+    width: 85vw;
     min-height: 100vh;
     background: var(--dark);
     position: relative;
-    left: 288px;
+    left: 15vw;
+}
+
+.node-row {
+    margin-bottom: 2.66vw;
+    position: relative;
+    height: 420px;
 }
 
 .node-card {
-    width: calc(100% / 4 - 20px);
-    height: 420px;
+    width: calc(100% / 4 - 2vw);
+    height: 100%;
     background: var(--light-gradient);
+    float: left;
+    margin-right: 2.66vw;
+    border-radius: 8px;
+    transition: .2s;
+    opacity: .95;
+    position: relative;
+}
+
+.node-card:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+}
+
+.node-card:last-child {
+    margin-right: 0;
+}
+
+.node-image {
+    height: 196px;
+    background: rgba(255, 255, 255, .05);
+    position: relative;
+    z-index: 1;
+}
+
+.node-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.node-desc {
+    padding: 1vw;
+    position: relative;
+}
+
+.node-desc h4 {
+    display: block;
+}
+
+.node-desc .node-stat p:last-of-type {
+    float: right;
+}
+
+.node-desc button {
+    margin-right: 8px;
+    position: relative;
+    bottom: 0;
+}
+
+.node-desc button img {
+    display: inline;
+    height: 20px;
+}
+
+.node-desc .node-trash {
+    background: rgba(248, 39, 89, .3);
+    padding: 12px;
+}
+
+.node-desc .node-trash:hover {
+    background: rgba(248, 39, 89, .5);
+}
+
+.node-card.add-new .center-this {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.node-card.add-new p {
+    color: var(--dark);
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.node-card.add-new img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.node-card .button-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.widget {
+    background: var(--light-gradient);
+    border-radius: 8px;
+    padding: 2.66vw;
+    float: left;
+    position: relative;
+}
+
+.widget h3 {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.content-row {
+    position: relative;
+}
+
+.overall-conv {
+    width: 40vw;
+}
+
+.overall-conv img {
+    width: 100%;
+}
+
+.overall-conv-stats {
+    width: 37vw;
+    float: left;
+}
+
+.small-conv {
+    width: 18.5vw;
+    height: 244px;
+    float: left;
+}
+
+.overall-conv-stats:first-child {
+    margin-right: 2.66vw;
+}
+
+.conv-row {
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin-left: 2.66vw;
+    margin-bottom: 2.66vw;
 }
