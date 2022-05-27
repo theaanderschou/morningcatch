@@ -1,0 +1,167 @@
+/* Color and Fonts */
+:root {
+    --green: #16D3AA;
+    --dark: #021A2E;
+    --grey: #284054;
+    --light: #ffffff;
+    --deep-gradient: linear-gradient(var(--midnight), #000);
+    --light-gradient: linear-gradient(0deg, var(--grey), #3C5B74);
+    /*Margin*/
+    --margin: 120px;
+}
+
+/* FUNDAMENTALS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+    scroll-behavior: smooth;
+    line-height: 1.65;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+span {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--light);
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -1px;
+    display: inline;
+}
+
+a {
+    cursor: pointer;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+
+h1 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+h2 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: 64px;
+}
+
+h3 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: clamp(1rem, 1.0vw, 1.7rem);
+}
+
+h4 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1rem, 1.0vw, 1.7rem);
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(.8rem, 1vw, 1rem);
+    line-height: 1.3rem;
+}
+
+input {
+}
+
+button {
+    font-weight: bold;
+    border: 2px solid var(--midnight);
+    padding: 3px 5px;
+    transition: .2s;
+    cursor: pointer;
+    background: transparent;
+}
+
+button:hover {
+    background: var(--midnight);
+    color: var(--marble);
+}
+
+::selection {
+    background: var(--oaktree);
+}
+
+.divider-line {
+    border-top: 1px solid var(--green);
+    margin: 20px 0;
+}
+
+#gradient-overlay {
+    background: radial-gradient(rgba(10,255,193,.19), #112722);
+    opacity: 35%;
+    mix-blend-mode: overlay;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+
+/* NAV styling */
+nav {
+    width: 288px;
+    background: var(--light-gradient);
+    height: 100vh;
+    padding: 40px;
+    position: fixed;
+}
+
+nav img {
+    width: 208px;
+}
+
+
+
+
+section {
+    padding: 40px;
+}
+
+#main-dashboard {
+    width: calc(100vw - 288px);
+    min-height: 100vh;
+    background: var(--dark);
+    position: relative;
+    left: 288px;
+}
+
+.node-card {
+    width: calc(100% / 4 - 20px);
+    height: 420px;
+    background: var(--light-gradient);
+}
