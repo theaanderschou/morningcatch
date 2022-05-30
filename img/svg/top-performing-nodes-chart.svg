@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="507.272" height="420.098" viewBox="0 0 507.272 420.098">
+  <g id="Group_21558" data-name="Group 21558" transform="translate(-422.273 -2089)">
+    <path id="Path_26744" data-name="Path 26744" d="M416.18,260.41l55.755-53.419h65.977" transform="translate(391.632 1916.252)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.25"/>
+    <path id="Path_26747" data-name="Path 26747" d="M381.087,264.64l-37.62-37h-55.3" transform="translate(134.11 1954.358)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.25"/>
+    <path id="Path_26745" data-name="Path 26745" d="M424.86,290.28l29.533,30.794h59.671" transform="translate(403.038 2088.448)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.25"/>
+    <path id="Path_26746" data-name="Path 26746" d="M397.138,330.368,422.364,379.6H486.33" transform="translate(329.313 2129.374)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.25"/>
+    <path id="Path_26740" data-name="Path 26740" d="M493.09,202.407A179.011,179.011,0,1,0,672.1,381.417,179.012,179.012,0,0,0,493.09,202.407Zm0,311.323A132.312,132.312,0,1,1,625.4,381.417,132.312,132.312,0,0,1,493.09,513.73Z" transform="translate(181.934 1907.793)" fill="#16d3aa"/>
+    <path id="Path_26741" data-name="Path 26741" d="M376.989,202.407v46.7A132.309,132.309,0,0,1,509.3,381.417H556A179.012,179.012,0,0,0,376.989,202.407Z" transform="translate(298.034 1907.793)" fill="#6c63ff"/>
+    <path id="Path_26742" data-name="Path 26742" d="M460.508,265.318a132.134,132.134,0,0,1-57.08,108.824l26.554,38.408A178.776,178.776,0,0,0,507.21,265.318Z" transform="translate(346.826 2023.892)" fill="#ff9333"/>
+    <path id="Path_26743" data-name="Path 26743" d="M376.989,327.052v46.7a178.135,178.135,0,0,0,101.784-31.781L452.22,303.563A131.674,131.674,0,0,1,376.989,327.052Z" transform="translate(298.034 2094.471)" fill="#f96c72"/>
+    <text id="_50_" data-name="50%" transform="translate(473.704 2171.725)" fill="#fff" font-size="23" font-family="DMSans-Regular, DM Sans"><tspan x="-47.794" y="0">50%</tspan></text>
+    <text id="_25_" data-name="25%" transform="translate(919.361 2112)" fill="#fff" font-size="23" font-family="DMSans-Regular, DM Sans"><tspan x="-45.011" y="0">25%</tspan></text>
+    <text id="_18_" data-name="18%" transform="translate(910.604 2399.733)" fill="#fff" font-size="23" font-family="DMSans-Regular, DM Sans"><tspan x="-38.755" y="0">18%</tspan></text>
+    <text id="_10_" data-name="10%" transform="translate(808.535 2498.668)" fill="#fff" font-size="22" font-family="DMSans-Regular, DM Sans"><tspan x="-38.896" y="0">10%</tspan></text>
+  </g>
+</svg>
