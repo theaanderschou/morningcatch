@@ -99,7 +99,24 @@ img {
     display: block;
 }
 
-input {}
+input {
+    border: none;
+    background: transparent;
+    color: var(--light);
+    padding: 12px 0;
+    border-bottom: 2px solid var(--green);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: -.5;
+}
+
+input:focus {
+    outline: none
+}
+
+::placeholder {
+    color: var(--light);
+}
 
 select {
     background: var(--grey);
@@ -132,7 +149,7 @@ button:hover {
 }
 
 ::selection {
-    background: var(--oaktree);
+    background: var(--green);
 }
 
 .divider-line {
@@ -162,23 +179,114 @@ nav {
     position: fixed;
 }
 
-nav img {
+nav main-logo {
     width: 100%;
 }
 
+nav .menu-link:first-of-type {
+    margin-top: 40px;
+}
+
+nav .menu-link {
+    position: relative;
+    display: block;
+    margin-bottom: 24px;
+    height: 32px;
+    transform: .2s;
+}
+
+nav .menu-link:hover {
+    border-bottom: 1px solid var(--green);
+}
+
+nav .menu-link img {
+    height: 20px;
+    width: inherit;
+    display: inline;
+}
+
+nav .menu-link p {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 8px;
+}
+
+nav .bottom-line {
+    position: absolute;
+    bottom: 2.66vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .bottom-line .dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--light);
+    display: inline;
+    margin: 0 12px;
+    top: 50%;
+}
+
+nav .bottom-line a {
+    transition: .2s;
+}
+
+nav .bottom-line a:hover {
+    color: var(--green);
+}
 
 
 
 section {
-    padding: 2.66vw;
-}
-
-#main-dashboard {
+    padding: 2.66vw 2.66vw 0;
     width: 85vw;
-    min-height: 100vh;
+    min-height: calc(100vh - 200px);
     background: var(--dark);
     position: relative;
     left: 15vw;
+}
+
+#main-dashboard {}
+
+.title-row {
+    position: relative;
+}
+
+.title-row .node-buttons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-row .node-buttons select {
+    position: relative;
+    margin-top: 0;
+    right: 1.33vw;
+}
+
+button.new-node {
+    height: 43px;
+    background: var(--green);
+    color: #155748;
+    transition: .2s;
+}
+
+button.new-node:hover {
+    background: #10f9c6;
+}
+
+button.new-node img {
+    display: inline;
+    margin-right: 8px;
+}
+
+.bottom-button {
+    margin-top: -1.33vw;
 }
 
 .node-row {
@@ -288,7 +396,7 @@ section {
 .widget {
     background: var(--light-gradient);
     border-radius: 8px;
-    padding: 2.66vw;
+    padding: 1.33vw 2vw;
     float: left;
     position: relative;
 }
@@ -345,6 +453,7 @@ section {
     background: linear-gradient(-45deg, #16D3AA, #6CF9EF);
     border: none;
 }
+
 .widget.leads-created * {
     color: var(--dark);
 }
@@ -399,7 +508,7 @@ section {
 .top-performing-nodes img {
     width: 22vw;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 58%;
     left: 50%;
 }
@@ -430,6 +539,7 @@ section {
 
 .node-rank .text span {
     margin-right: 1.33vw;
+    transition: .2s;
 }
 
 .node-rank .text * {
@@ -453,12 +563,16 @@ section {
     width: 100%;
 }
 
+.node-rank:hover span {
+    margin-right: 1.5vw;
+}
+
 .node-rank-1 .text span {
     color: var(--green);
 }
 
 .node-rank-1 .gradient {
-    background: linear-gradient(90deg, rgba(22,211,170,1), rgba(22,211,170,0));
+    background: linear-gradient(90deg, rgba(22, 211, 170, 1), rgba(22, 211, 170, 0));
 }
 
 .node-rank-2 .text span {
@@ -466,7 +580,7 @@ section {
 }
 
 .node-rank-2 .gradient {
-    background: linear-gradient(90deg, rgba(108,99,255,1), rgba(108,99,255,0));
+    background: linear-gradient(90deg, rgba(108, 99, 255, 1), rgba(108, 99, 255, 0));
 }
 
 .node-rank-3 .text span {
@@ -474,7 +588,7 @@ section {
 }
 
 .node-rank-3 .gradient {
-    background: linear-gradient(90deg, rgba(255,147,51,1), rgba(255,147,51,0));
+    background: linear-gradient(90deg, rgba(255, 147, 51, 1), rgba(255, 147, 51, 0));
 }
 
 .node-rank-4 .text span {
@@ -482,7 +596,7 @@ section {
 }
 
 .node-rank-4 .gradient {
-    background: linear-gradient(90deg, rgba(249,108,114,1), rgba(249,108,114,0));
+    background: linear-gradient(90deg, rgba(249, 108, 114, 1), rgba(249, 108, 114, 0));
 }
 
 .widget.rocket {
@@ -500,16 +614,130 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .widget.rocket:hover img {
-    transform: translateY(-20%);
+    top: 40%;
 }
 
 
 .widget.top-location {
     width: 100%;
-    height: 538;
+    height: 538px;
     margin-top: 2.66vw;
+    float: none;
+}
+
+.widget.top-location .map {
+    width: 50%;
+}
+
+.top-location-ranks {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.location-rank-row {
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, .25)
+}
+
+.location-rank-row p {
+    font-size: 18px;
+}
+
+.location-rank-row p:nth-child(1) {
+    margin-right: 1vw;
+}
+
+.location-rank-row p:nth-child(2) {
+    margin-right: 15vw;
+}
+
+.location-rank-row p:nth-child(3) {
+    margin-right: .5vw;
+}
+
+.location-rank-row img {
+    height: 20px;
+    display: inline;
+    transform: translateY(20%)
+}
+
+
+footer {
+    height: 200px;
+    position: relative;
+    widows: 85vw;
+    margin-left: 15vw;
+    padding: 0 2.66vw 2.66vw;
+}
+
+footer .footer-logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.uppercase {
+    font-size: 12px;
+    letter-spacing: 2.5;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+footer .footer-some {
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 2.66vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.widget.choose-node-type {
+    width: 100%;
+}
+
+.choose-node-type form {
+    margin-top: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.choose-node-type .radio-row {
+    width: 100%;
+    background: var(--dark);
+    height: 56px;
+    position: relative;
+    border-bottom: 1px solid #497174;
+}
+
+.choose-node-type .radio-row:last-of-type {
+    border: none;
+}
+
+.choose-node-type .radio-row input,
+.choose-node-type .radio-row label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 24px;
+}
+
+.choose-node-type .radio-row label {
+    left: 32px;
+}
+
+.choose-node-type .new-node {
+    position: sticky;
+    right: 2vw;
+    margin-top: 20px;
 }
