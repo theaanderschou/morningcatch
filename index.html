@@ -31,17 +31,17 @@
 
     <div id="gradient-overlay"></div>
 
-    <nav>
-        <img class="main-logo" src="img/morningcatch-logo-neg.svg">
+    <nav id="navigation-nav" class="active">
+        <img class="main-logo" src="img/morningcatch-logo-neg.svg" onclick="goToDashboard()">
 
         <div class="divider-line"></div>
 
-        <a class="menu-link">
+        <a class="menu-link" onclick="goToDashboard()">
             <img src="img/svg/chart-pie.svg">
             <p>Dashboard</p>
         </a>
 
-        <a class="menu-link">
+        <a class="menu-link" onclick="goToAddNode()">
             <img src="img/svg/add-white.svg">
             <p>Add node</p>
         </a>
@@ -58,7 +58,34 @@
         </div>
     </nav>
 
-    <section id="main-dashboard">
+    <nav id="edit-nav">
+        <img class="main-logo" src="img/morningcatch-logo-neg.svg" onclick="goToDashboard()">
+
+        <div class="divider-line"></div>
+
+        <div class="menu-link">
+            <p>Layout</p>
+            <img src="img/svg/arrow-down-thin.svg">
+        </div>
+
+        <div class="menu-link">
+            <p>Style</p>
+            <img src="img/svg/arrow-down-thin.svg">
+        </div>
+
+        <div class="menu-link">
+            <p>Text</p>
+            <img src="img/svg/arrow-down-thin.svg">
+        </div>
+
+        <div class="bottom-line">
+            <a>Help</a>
+            <div class="dot"></div>
+            <a>Log out</a>
+        </div>
+    </nav>
+
+    <section id="main-dashboard" class="active">
 
         <h2>Dashboard</h2>
         <div class="divider-line"></div>
@@ -75,7 +102,7 @@
                     <option>Livechat popups</option>
                 </select>
 
-                <button class="new-node"><img src="img/svg/plus-small.svg">New node</button>
+                <button class="new-node" onclick="goToAddNode()"><img src="img/svg/plus-small.svg">New node</button>
             </div>
         </div>
 
@@ -103,7 +130,7 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
@@ -131,7 +158,7 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
@@ -159,7 +186,7 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
@@ -187,7 +214,7 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
@@ -219,7 +246,7 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
@@ -247,13 +274,13 @@
 
                     <div class="button-row">
                         <button>Details</button>
-                        <button>Edit</button>
+                        <button onclick="goToEditNode()">Edit</button>
                         <button class="node-trash"><img src="img/svg/trash.svg"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="node-card add-new">
+            <div class="node-card add-new" onclick="goToAddNode()">
                 <div class="center-this">
                     <img src="img/svg/add.svg">
                     <p>Add node</p>
@@ -262,7 +289,7 @@
 
         </div>
 
-        <button class="new-node bottom-button"><img src="img/svg/plus-small.svg">Add node</button>
+        <button class="new-node bottom-button" onclick="goToAddNode()"><img src="img/svg/plus-small.svg">Add node</button>
 
         <div class="divider-line"></div>
 
@@ -436,12 +463,8 @@
 
     <section id="choose-node-type">
 
-        <h2>Add node</h2>
+        <h2>1. Choose your node type</h2>
         <div class="divider-line"></div>
-
-        <div class="title-row">
-            <h2>1. Choose your node type</h2>
-        </div>
 
         <div class="widget choose-node-type">
             <input placeholder="Enter node name">
@@ -449,27 +472,133 @@
             <form>
                 <div class="radio-row">
                     <input type="radio">
-                    <label>Popup</label>
+                    <label>Newsletter</label>
                 </div>
                 <div class="radio-row">
                     <input type="radio">
-                    <label>Popup</label>
+                    <label>Form</label>
                 </div>
                 <div class="radio-row">
                     <input type="radio">
-                    <label>Popup</label>
+                    <label>Gameification</label>
                 </div>
                 <div class="radio-row">
                     <input type="radio">
-                    <label>Popup</label>
+                    <label>Chat bot</label>
                 </div>
             </form>
 
-            <button class="new-node">Next step</button>
+            <button class="new-node" onclick="goToSelectTemplate()">Next step</button>
 
         </div>
 
     </section>
+
+    <section id="select-template">
+
+        <h2>2. Select Template</h2>
+        <div class="divider-line"></div>
+
+        <div class="node-row">
+
+            <div class="node-card">
+                <div class="node-image">
+                    <img src="img/popup-zalando.png">
+                </div>
+                <div class="node-desc">
+                    <h4>Nam & Email</h4>
+                    <p class="node-type">Newsletter popup</p>
+                </div>
+            </div>
+            <div class="node-card">
+                <div class="node-image">
+                    <img src="img/popup-mc.png">
+                </div>
+                <div class="node-desc">
+                    <h4>Email</h4>
+                    <p class="node-type">Newsletter popup</p>
+                </div>
+            </div>
+            <div class="node-card">
+                <div class="node-image">
+                    <img src="img/popup-mailing.png">
+                </div>
+                <div class="node-desc">
+                    <h4>Email</h4>
+                    <p class="node-type">Newsletter popup</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="new-node" onclick="goToEditNode()">Next step</button>
+
+    </section>
+
+
+
+
+    <section id="edit-node">
+
+        <h2>Edit node</h2>
+        <div class="divider-line"></div>
+
+        <div class="widget edit-container">
+            <div class="background-container">
+                <img src="img/popup-zalando-stor.png">
+            </div>
+        </div>
+
+        <button class="new-node" onclick="goToPublishNode()">Next step</button>
+
+    </section>
+
+
+
+
+
+    <section id="publish-node">
+
+        <h2>Publish node</h2>
+        <div class="divider-line"></div>
+
+        <div class="widget publish-code">
+
+            <span class="node-staus">Draft</span>
+            <h3>First signup</h3>
+            <span class="node-type">Newsletter popup</span>
+
+            <div class="divider-line"></div>
+
+            <p>Include the following code in your page head tag:</p>
+
+            <textarea readonly="">&lt;script type="module" src="https://api.morningcatch.net/v1/public/script/module/1023"&gt;&lt;/script&gt;
+&lt;script noModule src="https://api.morningcatch.net/v1/public/script/1023" defer&gt;&lt;/script&gt;</textarea>
+
+            <p>If using google tag manager, include the following code in google tag manager instead:</p>
+
+            <textarea readonly=""><script src="https://api.morningcatch.net/v1/public/script/1023" defer></script>" defer&gt;&lt;/script&gt;</textarea>
+
+            <p>Copy this if you would like to create your own button:</p>
+
+            <textarea class="control-input publish-script" readonly="">&lt;script src="https://api.morningcatch.net/v1/public/script/1023" defer&gt;&lt;/script&gt;</textarea>
+
+
+
+            <button class="new-node" onclick="goToDashboard()"><img src="img/svg/rocket-lunch.svg">Publish</button>
+
+        </div>
+
+        <div class="widget popup-preview">
+            <img src="img/popup-zalando-stor.png">
+        </div>
+
+    </section>
+
+
+
+
+
 
     <footer>
         <img class="footer-logo" src="img/svg/morningcatch%20footer%20logo.svg">

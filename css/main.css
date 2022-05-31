@@ -177,10 +177,12 @@ nav {
     height: 100vh;
     padding: 2vw;
     position: fixed;
+    display: none;
 }
 
-nav main-logo {
+nav .main-logo {
     width: 100%;
+    cursor: pointer;
 }
 
 nav .menu-link:first-of-type {
@@ -192,7 +194,7 @@ nav .menu-link {
     display: block;
     margin-bottom: 24px;
     height: 32px;
-    transform: .2s;
+    transition: .2s;
 }
 
 nav .menu-link:hover {
@@ -237,6 +239,10 @@ nav .bottom-line a:hover {
     color: var(--green);
 }
 
+nav.active {
+    display: block;
+}
+
 
 
 section {
@@ -246,6 +252,11 @@ section {
     background: var(--dark);
     position: relative;
     left: 15vw;
+    display: none;
+}
+
+section.active {
+    display: block;
 }
 
 #main-dashboard {}
@@ -329,7 +340,8 @@ button.new-node img {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 80%;
+    max-width: 80%;
+    max-height: 70%;
 }
 
 .node-desc {
@@ -740,4 +752,156 @@ footer .footer-some {
     position: sticky;
     right: 2vw;
     margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+#select-template .node-row {
+    height: 325px;
+}
+
+#select-template .node-card .node-desc * {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#select-template .node-card .node-desc .node-type {
+    margin-top: 40px;
+}
+
+
+#edit-node {
+    height: calc(100vh - 200px);
+}
+
+
+#edit-node .edit-container {
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    position: relative;
+}
+
+.edit-container .background-container {
+    height: calc(100% - 1.33vw);
+    width: calc(100% - 1.33vw);
+    background-image: url(../img/zalando-bg.png);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.edit-container .background-container img {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#edit-nav .menu-link img {
+    right: 0;
+    position: absolute;
+    width: 8px;
+    transform: translateY(-50%) rotate(-90deg);
+    top: 30%;
+}
+
+#edit-nav .menu-link {
+    border-bottom: 1px solid var(--dark);
+    cursor: pointer;
+}
+
+#edit-node button.new-node {
+    left: 2.66vw;
+    bottom: 0;
+    position: absolute;
+}
+
+/* Bruges ikke 
+#edit-nav .dropdown-content {
+    height: 200px;
+    width: 100%;
+    background: var(--grey);
+    position: relative;
+    margin-bottom: 24px;
+    margin-top: -24px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+*/
+
+
+#publish-node .publish-code {
+    width: 25vw;
+    margin-right: 2.66vw;
+    height: calc(100vh - 400px);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#publish-node .popup-preview {
+    width: 52vw;
+}
+
+#publish-node .node-staus,
+#publish-node .node-type {
+    text-transform: uppercase;
+    letter-spacing: 3;
+    font-weight: bold;
+    color: var(--light);
+    opacity: .6;
+    font-size: 13px;
+}
+
+#publish-node .node-type {
+    margin-top: -20px;
+}
+
+#publish-node h3 {
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+
+#publish-node .popup-preview img {
+    width: 75%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+
+#publish-node .new-node {
+    bottom: 2.66vw;
+    display: block;
+    position: absolute;
+}
+
+.publish-code textarea {
+    width: 100%;
+    height: 80px;
+    padding: 16px;
+    background: rgba(255, 255, 255, .1);
+    color: var(--light);
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+.publish-code textarea:first-of-type {
+    height: 125px;
 }
