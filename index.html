@@ -32,16 +32,52 @@
     <div id="gradient-overlay"></div>
 
     <nav>
-        <img src="img/morningcatch-logo-neg.svg">
+        <img class="main-logo" src="img/morningcatch-logo-neg.svg">
 
         <div class="divider-line"></div>
+
+        <a class="menu-link">
+            <img src="img/svg/chart-pie.svg">
+            <p>Dashboard</p>
+        </a>
+
+        <a class="menu-link">
+            <img src="img/svg/add-white.svg">
+            <p>Add node</p>
+        </a>
+
+        <a class="menu-link">
+            <img src="img/svg/settings.svg">
+            <p>Account Settings</p>
+        </a>
+
+        <div class="bottom-line">
+            <a>Help</a>
+            <div class="dot"></div>
+            <a>Log out</a>
+        </div>
     </nav>
 
     <section id="main-dashboard">
 
         <h2>Dashboard</h2>
         <div class="divider-line"></div>
-        <h2>Nodes</h2>
+
+        <div class="title-row">
+            <h2>Nodes</h2>
+
+            <div class="node-buttons">
+                <select>
+                    <option>All</option>
+                    <option>Newsletter popups</option>
+                    <option>Contact forms</option>
+                    <option>Gameification popups</option>
+                    <option>Livechat popups</option>
+                </select>
+
+                <button class="new-node"><img src="img/svg/plus-small.svg">New node</button>
+            </div>
+        </div>
 
         <div class="node-row">
 
@@ -226,10 +262,12 @@
 
         </div>
 
+        <button class="new-node bottom-button"><img src="img/svg/plus-small.svg">Add node</button>
+
         <div class="divider-line"></div>
 
         <h2>Performance Overview</h2>
-        
+
         <select class="time-select">
             <option>Last 7 days</option>
             <option>Last 30 days</option>
@@ -304,53 +342,145 @@
             </div>
 
         </div>
-        
+
         <div class="top-performing-nodes-row">
-            
+
             <div class="widget top-performing-nodes">
                 <h3>Top performing nodes</h3>
                 <img src="img/svg/top-performing-nodes-chart.svg">
             </div>
-            
+
             <div class="top-nodes-rank-row">
                 <div class="node-rank node-rank-1">
                     <div class="text">
-                        <span>#1</span><p>Newsletter signup</p>
+                        <span>#1</span>
+                        <p>Newsletter signup</p>
                     </div>
                     <div class="gradient"></div>
                 </div>
                 <div class="node-rank node-rank-2">
                     <div class="text">
-                        <span>#2</span><p>Live chat FAQ</p>
+                        <span>#2</span>
+                        <p>Live chat FAQ</p>
                     </div>
                     <div class="gradient"></div>
                 </div>
                 <div class="node-rank node-rank-3">
                     <div class="text">
-                        <span>#3</span><p>Student discount signup</p>
+                        <span>#3</span>
+                        <p>Student discount signup</p>
                     </div>
                     <div class="gradient"></div>
                 </div>
                 <div class="node-rank node-rank-4">
                     <div class="text">
-                        <span>#4</span><p>Contact form</p>
+                        <span>#4</span>
+                        <p>Contact form</p>
                     </div>
                     <div class="gradient"></div>
                 </div>
             </div>
-            
+
             <div class="widget rocket">
                 <img src="img/svg/rockey.svg">
             </div>
-            
+
         </div>
-        
-        
+
+
         <div class="widget top-location">
             <h3>Top locations</h3>
+            <img class="map" src="img/svg/earth.svg">
+
+            <div class="top-location-ranks">
+
+                <div class="location-rank-row">
+                    <p>1.</p>
+                    <p>Denmark</p>
+                    <p>369</p>
+                    <img src="img/svg/user-white.svg">
+                </div>
+
+                <div class="location-rank-row">
+                    <p>2.</p>
+                    <p>England</p>
+                    <p>288</p>
+                    <img src="img/svg/user-white.svg">
+                </div>
+
+                <div class="location-rank-row">
+                    <p>3.</p>
+                    <p>Australia</p>
+                    <p>169</p>
+                    <img src="img/svg/user-white.svg">
+                </div>
+
+                <div class="location-rank-row">
+                    <p>4.</p>
+                    <p>Greenland</p>
+                    <p>82</p>
+                    <img src="img/svg/user-white.svg">
+                </div>
+
+                <div class="location-rank-row">
+                    <p>5.</p>
+                    <p>Scotland</p>
+                    <p>30</p>
+                    <img src="img/svg/user-white.svg">
+                </div>
+
+            </div>
         </div>
 
     </section>
+
+    <section id="choose-node-type">
+
+        <h2>Add node</h2>
+        <div class="divider-line"></div>
+
+        <div class="title-row">
+            <h2>1. Choose your node type</h2>
+        </div>
+
+        <div class="widget choose-node-type">
+            <input placeholder="Enter node name">
+
+            <form>
+                <div class="radio-row">
+                    <input type="radio">
+                    <label>Popup</label>
+                </div>
+                <div class="radio-row">
+                    <input type="radio">
+                    <label>Popup</label>
+                </div>
+                <div class="radio-row">
+                    <input type="radio">
+                    <label>Popup</label>
+                </div>
+                <div class="radio-row">
+                    <input type="radio">
+                    <label>Popup</label>
+                </div>
+            </form>
+
+            <button class="new-node">Next step</button>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <img class="footer-logo" src="img/svg/morningcatch%20footer%20logo.svg">
+        <div class="footer-some">
+            <p class="uppercase">Follow us:</p>
+            <img src="img/svg/instagram.svg">
+            <img src="img/svg/linkedin.svg">
+            <img src="img/svg/twitter.svg">
+            <img src="img/svg/facebook.svg">
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 
