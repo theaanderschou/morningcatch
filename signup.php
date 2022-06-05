@@ -75,12 +75,10 @@
     <div class="signup-content">
 
             <div class="signup-alert" role="alert">
-                <h2>Well done!</h2>
-                <br><br>
                 <h1>You have created a Morningcatch account!</h1>
             </div>
                 <a href="index.html">
-                    <button type="submit" name="submit" class="signup-btn2">Cool!</button>
+                    <button type="submit" name="submit" class="signup-btn2">Cool! Take me back!</button>
                 </a>
     </div>
 
