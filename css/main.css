@@ -1001,7 +1001,7 @@ footer .footer-some {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -35%);
 }
 
 .signup-card:hover {
