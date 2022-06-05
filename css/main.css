@@ -1140,8 +1140,19 @@ footer .footer-some {
 }
 
 .signup-btn2 {
-    width: 60%;
-    margin: 50px auto 0 auto !important;
+    width: 100%;
+    margin: 50px auto 0 auto;
+}
+
+.signup-alert {
+    margin-bottom: 50px;
+}
+
+.signup-image2 {
+    height: 100px;
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
 }
 
 .signup-image {
