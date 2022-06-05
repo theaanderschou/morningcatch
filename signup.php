@@ -72,26 +72,15 @@
 
 <div class="signup-card">
 
-    <div class="signup-tabs signup-tab">
-        <p class="signup-p">Sign up</h1>
-    </div>
-
-    <div class="signup-tabs login-tab">
-        <p class="signup-p">Login</h1>
-    </div>
-
     <div class="signup-content">
-
-        <div class="signup-title">
-            <h2>Sign up</h2>
-        </div>
 
             <div class="signup-alert" role="alert">
                 <h2>Well done!</h2>
-                <p>You have created a Morningcatch account!</p>
+                <br><br>
+                <h3>You have created a Morningcatch account!</h3>
             </div>
                 <a href="index.html">
-                    <button type="submit" name="submit" class="signup-btn">Cool!</button>
+                    <button type="submit" name="submit" class="signup-btn2">Cool!</button>
                 </a>
             </div>
         </form>

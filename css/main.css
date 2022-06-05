@@ -1139,6 +1139,12 @@ footer .footer-some {
     margin-top: 20px;
 }
 
+.signup-btn2 {
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+}
+
 .signup-image {
     height: 100px;
     position: relative;
