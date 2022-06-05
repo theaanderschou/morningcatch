@@ -463,6 +463,7 @@
 
     <section id="choose-node-type">
 
+        <img class="go-back-arrow" src="img/svg/arrow-down-thin.svg" onclick="goToDashboard()">
         <h2>1. Choose your node type</h2>
         <div class="divider-line"></div>
 
@@ -496,6 +497,7 @@
 
     <section id="select-template">
 
+        <img class="go-back-arrow" src="img/svg/arrow-down-thin.svg" onclick="goToAddNode()">
         <h2>2. Select Template</h2>
         <div class="divider-line"></div>
 
@@ -540,7 +542,8 @@
 
     <section id="edit-node">
 
-        <h2>Edit node</h2>
+        <img class="go-back-arrow" src="img/svg/arrow-down-thin.svg" onclick="goToSelectTemplate()">
+        <h2>3. Edit node</h2>
         <div class="divider-line"></div>
 
         <div class="widget edit-container">
@@ -559,7 +562,8 @@
 
     <section id="publish-node">
 
-        <h2>Publish node</h2>
+        <img class="go-back-arrow" src="img/svg/arrow-down-thin.svg" onclick="goToEditNode()">
+        <h2>4. Publish node</h2>
         <div class="divider-line"></div>
 
         <div class="widget publish-code">
@@ -585,16 +589,25 @@
 
 
 
-            <button class="new-node" onclick="goToDashboard()"><img src="img/svg/rocket-lunch.svg">Publish</button>
+            <button class="new-node" onclick="publishNode()"><img src="img/svg/rocket-lunch.svg">Publish</button>
 
         </div>
 
         <div class="widget popup-preview">
             <img src="img/popup-zalando-stor.png">
         </div>
+        
+        
 
     </section>
-
+    
+    
+    <section id="popup-published">
+        <div class="center-published">
+        <lottie-player id="popup-published-lottie" src="json/node-published.json" style="width: 250px;"  alt="Node Published"></lottie-player>
+        <h3>Node published</h3>
+        </div>
+    </section>
 
 
 
@@ -612,6 +625,8 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
 </body>
 

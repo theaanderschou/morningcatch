@@ -45,7 +45,36 @@ function goToEditNode() {
 function goToPublishNode() {
     removeActiveSection();
     sections[4].classList.add("active");
+    
+    window.scrollTo({
+        top: 0,
+    });
 }
+
+function publishNode() {
+    removeActiveSection();
+    sections[5].classList.add("active");
+    
+    LottieInteractivity.create({
+    player:'#popup-published-lottie',
+    mode:"scroll",
+    actions: [
+        {
+        visibility: [0.50, 1.0],
+        type: "play"
+        }
+    ]
+});
+    
+    setTimeout(function() {
+        window.scrollTo({
+            top: 0,
+        });
+  goToDashboard();
+}, 4000);
+}
+
+//https://lottiefiles.com/interactivity
 
 
 
