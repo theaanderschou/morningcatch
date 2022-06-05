@@ -1,0 +1,60 @@
+CREATE TABLE `customer` (
+  `customer_ID` int NOT NULL AUTO_INCREMENT,
+  `customer_firstname` varchar(50),
+  `customer_email` varchar(50),
+  `customer_password` varchar(50),
+  PRIMARY KEY (`customer_ID`)
+);
+
+CREATE TABLE `customer_subs` (
+  `customer_ID` int,
+  `sub_ID` int
+);
+
+CREATE TABLE `subs` (
+  `sub_ID` int,
+  `sub_names` int,
+  `sub_prices` int,
+  `sub_features` int,
+  PRIMARY KEY (`sub_ID`)
+);
+
+CREATE TABLE `sub_features` (
+  `sub_featureID` int,
+  `popups` int,
+  `gamefication` int,
+  `chatbots` int,
+  `no watermark` int,
+  `node limit` int,
+  `faq` int,
+  `emailsupport` int,
+  `livechat` int,
+  PRIMARY KEY (`sub_featureID`)
+);
+
+CREATE TABLE `sub_prices` (
+  `sub_priceID` int,
+  `sub_prices` int,
+  PRIMARY KEY (`sub_priceID`)
+);
+
+CREATE TABLE `sub_names` (
+  `sub_nameID` int,
+  `sub_names` varchar(50),
+  PRIMARY KEY (`sub_nameID`)
+);
+
+ALTER TABLE customer_subs
+ADD FOREIGN KEY (customer_ID) REFERENCES customer(customer_ID);
+
+ALTER TABLE customer_subs
+ADD FOREIGN KEY (sub_ID) REFERENCES subs(sub_ID);
+
+ALTER TABLE subs
+ADD FOREIGN KEY (sub_names) REFERENCES sub_names(sub_nameID);
+
+ALTER TABLE subs
+ADD FOREIGN KEY (sub_prices) REFERENCES sub_prices(sub_priceID);
+
+ALTER TABLE subs
+ADD FOREIGN KEY (sub_features) REFERENCES sub_features(sub_featureID);
