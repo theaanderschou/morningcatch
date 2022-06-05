@@ -12,36 +12,61 @@
         
         if($conn->query($sql) === TRUE) {
     ?>
-            <nav id="signup-nav">
+<html lang="en">
 
-<a href="index.html">
-    <div class="signup-logo">
-        <img src="./img/morningcatch-logo-neg.png" alt="Morningcatch Logo">
-    </div>
-</a>
+<head>
 
-<ul class="signup-navlinks">
-    <li>
-        <a href="https://morningcatch.dk#anchor1">Benefits</a>
-    </li>
-    <li>
-        <a href="https://morningcatch.dk#anchor3">Functionality</a>
-    </li>
-    <li>
-        <a href="#">Sign up</a>
-    </li>
-    <li>
-        <a href="#">Login</a>
-    </li>
-    <li>
-        <a href="#">EN</a>
-    </li>
-</ul>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-</nav>
+    <title>Morningcatch</title>
 
+    <!-- SEO meta tags-->
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
 
 
+    <nav id="signup-nav">
+
+        <a href="index.html">
+            <div class="signup-logo">
+                <img src="./img/morningcatch-logo-neg.png" alt="Morningcatch Logo">
+            </div>
+        </a>
+
+        <ul class="signup-navlinks">
+            <li>
+                <a href="https://morningcatch.dk#anchor1">Benefits</a>
+            </li>
+            <li>
+                <a href="https://morningcatch.dk#anchor3">Functionality</a>
+            </li>
+            <li>
+                <a href="#">Sign up</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">EN</a>
+            </li>
+        </ul>
+
+    </nav>
 
 <div class="signup-row">
 
@@ -79,6 +104,12 @@
 
 </div>
 </div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
 
     <?php
         } else {
