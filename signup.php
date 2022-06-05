@@ -12,12 +12,74 @@
         
         if($conn->query($sql) === TRUE) {
     ?>
-            <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Well done!</h4>
-            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-            <hr>
-            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            <nav id="signup-nav">
+
+<a href="index.html">
+    <div class="signup-logo">
+        <img src="./img/morningcatch-logo-neg.png" alt="Morningcatch Logo">
+    </div>
+</a>
+
+<ul class="signup-navlinks">
+    <li>
+        <a href="https://morningcatch.dk#anchor1">Benefits</a>
+    </li>
+    <li>
+        <a href="https://morningcatch.dk#anchor3">Functionality</a>
+    </li>
+    <li>
+        <a href="#">Sign up</a>
+    </li>
+    <li>
+        <a href="#">Login</a>
+    </li>
+    <li>
+        <a href="#">EN</a>
+    </li>
+</ul>
+
+</nav>
+
+
+
+
+<div class="signup-row">
+
+<div class="signup-card">
+
+    <div class="signup-tabs signup-tab">
+        <p class="signup-p">Sign up</h1>
+    </div>
+
+    <div class="signup-tabs login-tab">
+        <p class="signup-p">Login</h1>
+    </div>
+
+    <div class="signup-content">
+
+        <div class="signup-title">
+            <h2>Sign up</h2>
+        </div>
+
+            <div class="signup-alert" role="alert">
+                <h2>Well done!</h2>
+                <p>You have created a Morningcatch account!</p>
             </div>
+                <a href="index.html">
+                    <button type="submit" name="submit" class="signup-btn">Cool!</button>
+                </a>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="signup-image">
+        <img src="img/morningcatch-logo-neg.png" alt="">
+    </div>
+
+</div>
+</div>
+
     <?php
         } else {
             echo "Error:" .$sql . "<br>" .$conn->error;
