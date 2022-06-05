@@ -1139,6 +1139,21 @@ footer .footer-some {
     margin-top: 20px;
 }
 
+.alert-card {
+    min-width: 400px;
+    max-width: 450px;
+    width: calc(100% / 3 - 2vw);
+    height: 80%;
+    background: var(--light-gradient);
+    border-radius: 8px;
+    transition: .2s;
+    opacity: .95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
 .signup-btn2 {
     width: 100%;
     margin: 50px auto 0 auto;
@@ -1149,7 +1164,7 @@ footer .footer-some {
     text-align: center;
 }
 .signup-image2 {
-    height: 100px;
+    height: 80px;
     position: relative;
     z-index: 1;
 }
@@ -1158,7 +1173,7 @@ footer .footer-some {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -70%);
     z-index: 2;
     max-width: 35%;
     max-height: 70%;

@@ -70,7 +70,7 @@
 
 <div class="signup-row">
 
-<div class="signup-card">
+<div class="alert-card">
 
     <div class="signup-content">
 
