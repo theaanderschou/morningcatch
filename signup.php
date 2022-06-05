@@ -82,10 +82,6 @@
                 </a>
     </div>
 
-    <div class="signup-image">
-        <img src="img/morningcatch-logo-neg.png" alt="">
-    </div>
-
 </div>
 </div>
 
