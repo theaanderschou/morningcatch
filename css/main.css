@@ -922,6 +922,69 @@ footer .footer-some {
 
 
 
+
+/* SIGNUP PAGE*/
+
+
+/* Sign up nav */
+#signup-nav {
+    display: block;
+    width: 80%;
+    height: 6vh;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+    padding: 0% !important;
+    background: transparent !important;*/
+    background-color: teal;
+}
+
+.signup-logo {
+    width: 28%;
+    height: 40px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.signup-logo img {
+    width: 200px;
+}
+
+.signup-navlinks {
+    width: 55%;
+    height: 6vh;
+    padding-top: 30px;
+    float: right;
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    overflow-x: hidden;
+    justify-content: space-around;
+}
+
+.signup-navlinks li {
+    text-align: center;
+    z-index: 0;
+}
+
+.signup-navlinks li a {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.signup-navlinks a {
+    color: var(--light);
+    text-decoration: none;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+
+/* Sign up card + form */
 .signup-row {
     position: relative;
     height: 620px;
@@ -979,7 +1042,8 @@ footer .footer-some {
     margin: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-45%);
+    transform: translateY(-70%);
+    margin-bottom: 120px;
 }
 
 .signup-form, .signup-form input {
@@ -1024,7 +1088,7 @@ footer .footer-some {
   
   /* On mouse-over, add a grey background color */
   .rem-container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: var(--green);;
   }
   
   /* When the checkbox is checked, add a blue background */
@@ -1067,6 +1131,7 @@ footer .footer-some {
 .rem-container{
     float: left;
     width: 40%;
+    margin-bottom: 30px;
 }
 
 .signup-btn {
@@ -1076,7 +1141,7 @@ footer .footer-some {
 }
 
 .signup-image {
-    height: 196px;
+    height: 100px;
     position: relative;
     z-index: 1;
 }
@@ -1087,7 +1152,7 @@ footer .footer-some {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    max-width: 50%;
+    max-width: 35%;
     max-height: 70%;
 }
 
