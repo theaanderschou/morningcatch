@@ -1146,6 +1146,22 @@ footer .footer-some {
 
 .signup-alert {
     margin-bottom: 50px;
+    text-align: center;
+}
+.signup-image2 {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.signup-image2 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 2;
+    max-width: 35%;
+    max-height: 70%;
 }
 
 .signup-image {
