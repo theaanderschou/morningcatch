@@ -1140,17 +1140,19 @@ footer .footer-some {
 }
 
 .signup-btn2 {
-    width: 50%;
+    width: 60%;
     position: relative;
-    top: 70%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -35%);
+    transform: translate(-50%, -50%);
+}
+
+.signup-alert {
+    margin-bottom: 30px;
 }
 
 .signup-alert h2 {
-    font-weight: 900;
-    font-style: normal;
-    font-size: 54px;
+    font-size: 54px !important;
 }
 
 .signup-image {
