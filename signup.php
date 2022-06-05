@@ -1,8 +1,5 @@
     <?php
     
-    if(isset($_POST['customer_firstname']) && isset($_POST['customer_email']) && isset($_POST['customer_password'])){
-
-
     include_once "dbh.inc.php";
 
         $customer_firstname = $_POST['customer_firstname'];
@@ -22,9 +19,5 @@
 
         // Then we run the query in the database.
         mysqli_query($conn, $sql);
-    
-    } else {
-        echo "Please fill out all fields in the form.";
-    }
 
     ?> 
