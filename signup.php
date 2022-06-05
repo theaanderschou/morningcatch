@@ -70,7 +70,7 @@
 
 <div class="signup-row">
 
-<div class="alert-card">
+<div class="signup-card">
 
     <div class="signup-content">
 
@@ -82,7 +82,7 @@
                 </a>
     </div>
 
-    <div class="signup-image2">
+    <div class="signup-image">
         <img src="img/morningcatch-logo-neg.png" alt="">
     </div>
 
