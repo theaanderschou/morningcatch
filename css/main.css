@@ -1142,9 +1142,15 @@ footer .footer-some {
 .signup-btn2 {
     width: 50%;
     position: relative;
-    top: 30%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -35%);
+}
+
+.signup-alert h2 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: 54px;
 }
 
 .signup-image {
