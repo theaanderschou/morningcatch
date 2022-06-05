@@ -75,7 +75,7 @@
     <div class="signup-content">
 
             <div class="signup-alert" role="alert">
-                <h3>Well done!</h3>
+                <h2>Well done!</h2>
                 <br><br>
                 <h1>You have created a Morningcatch account!</h1>
             </div>
