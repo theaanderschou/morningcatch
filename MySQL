@@ -12,7 +12,7 @@ CREATE TABLE `customer_subs` (
 );
 
 CREATE TABLE `subs` (
-  `sub_ID` int,
+  `sub_ID` int NOT NULL AUTO_INCREMENT,
   `sub_names` int,
   `sub_prices` int,
   `sub_features` int,
@@ -20,7 +20,7 @@ CREATE TABLE `subs` (
 );
 
 CREATE TABLE `sub_features` (
-  `sub_featureID` int,
+  `sub_featureID` int NOT NULL AUTO_INCREMENT,
   `popups` int,
   `gamefication` int,
   `chatbots` int,
@@ -33,13 +33,13 @@ CREATE TABLE `sub_features` (
 );
 
 CREATE TABLE `sub_prices` (
-  `sub_priceID` int,
+  `sub_priceID` int NOT NULL AUTO_INCREMENT,
   `sub_prices` int,
   PRIMARY KEY (`sub_priceID`)
 );
 
 CREATE TABLE `sub_names` (
-  `sub_nameID` int,
+  `sub_nameID` int NOT NULL AUTO_INCREMENT,
   `sub_names` varchar(50),
   PRIMARY KEY (`sub_nameID`)
 );
