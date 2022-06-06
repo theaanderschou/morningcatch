@@ -62,7 +62,7 @@ function publishNode() {
         window.scrollTo({
             top: 0,
         });
-  goToDashboard();
+  location.reload();
 }, 4000);
 };
 
