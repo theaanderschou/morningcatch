@@ -93,7 +93,86 @@
 
     <?php
         } else {
-            echo "Error:" .$sql . "<br>" .$conn->error;
+    ?> 
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Morningcatch</title>
+
+    <!-- SEO meta tags-->
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav id="signup-nav">
+
+        <a href="index.html">
+            <div class="signup-logo">
+                <img src="./img/morningcatch-logo-neg.png" alt="Morningcatch Logo">
+            </div>
+        </a>
+
+        <ul class="signup-navlinks">
+            <li>
+                <a href="https://morningcatch.dk#anchor1">Benefits</a>
+            </li>
+            <li>
+                <a href="https://morningcatch.dk#anchor3">Functionality</a>
+            </li>
+            <li>
+                <a href="#">Sign up</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">EN</a>
+            </li>
+        </ul>
+
+    </nav>
+
+<div class="signup-row">
+
+<div class="signup-card">
+
+    <div class="signup-content">
+
+            <div class="signup-alert" role="alert">
+                <h1>An error occured! Try again.</h1>
+            </div>
+                <a href="index.html">
+                    <button type="submit" name="submit" class="signup-btn2">Cool! Take me back!</button>
+                </a>
+    </div>
+
+</div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+    <?php
         }
         $conn->close();
 
