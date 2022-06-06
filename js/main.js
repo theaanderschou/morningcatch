@@ -55,15 +55,15 @@ function publishNode() {
     removeActiveSection();
     sections[5].classList.add("active");
 
+    window.scrollTo({
+        top: 0,
+    });
     const player = document.getElementById('popup-published-lottie');
     player.play();
     
     setTimeout(function() {
-        window.scrollTo({
-            top: 0,
-        });
-  location.reload();
-}, 4000);
+        location.reload();
+    }, 4000);
 };
 
 //https://lottiefiles.com/interactivity
